@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item 
+  	android:id="@+id/men_main_preferences"
+  	android:title="@string/men_main_preferences"
+  	android:icon="@android:drawable/ic_menu_preferences"/>
+  <item 
+  	android:id="@+id/men_main_reset"
+  	android:title="@string/men_main_reset"
+  	android:icon="@android:drawable/ic_menu_revert"/>
+  <item 
+  	android:id="@+id/men_main_exit"
+  	android:title="@string/men_main_exit"
+  	android:icon="@android:drawable/ic_menu_close_clear_cancel"/>
+</menu>

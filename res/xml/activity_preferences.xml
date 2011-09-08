@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <PreferenceCategory android:title="@string/txt_main_preferences_cat_allgemein">
+  	<EditTextPreference android:title="@string/txt_main_preference_name"
+  		android:summary="Hier können Sie Ihren Benutzernamen eingegeben."
+  		android:key="benutzer"
+  		android:defaultValue="Welt"/>
+  	<CheckBoxPreference android:title="Activity-Name anzeigen"
+  		android:summary="Stellen Sie ein, ob der Activity-Name in jeder Activity unten links angezeigt werden soll."
+  		android:key="show_activity"
+  		android:defaultValue="FALSE"
+  		android:enabled="FALSE"/>  		
+  </PreferenceCategory>
+  <PreferenceCategory android:title="@string/txt_main_preferences_cat_levelcontrol">
+  	<CheckBoxPreference android:title="Levelkontrolle aktivieren"
+  		android:summary="@string/txt_main_preference_enablelevelctrl"
+  		android:key="enable_lvl_ctrl"
+  		android:disableDependentsState="TRUE"
+  		android:defaultValue="TRUE"/>
+  	<ListPreference android:title="Demo-Level"
+  		android:summary="Hier können Sie das aktuelle Level der Demo-Anwendung manuell einstellen."
+  		android:key="lvl"
+  		android:entries="@array/ary_main_preferences_levels"
+  		android:entryValues="@array/ary_main_preferences_levels_values"
+  		android:dependency="enable_lvl_ctrl"
+  		/>
+  	<CheckBoxPreference android:title="Hilfs-PopUps aktivieren"
+  		android:summary="@string/txt_main_preference_pophelp"
+  		android:key="enable_help_popups"
+  		android:dependency="enable_lvl_ctrl"
+  		android:defaultValue="TRUE"/>
+  </PreferenceCategory>
+  <PreferenceCategory android:title="@string/txt_main_preferences_cat_info">
+    <Preference android:title="Info zu diesem Screen"
+    	android:summary="@string/txt_main_preference_info"
+    	android:selectable="false"/>
+  
+  </PreferenceCategory>
+
+</PreferenceScreen>

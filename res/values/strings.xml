@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    
+    <!-- Textfelder -->
+    <string name="txt_main_hello">Hallo Android!</string>
+    <string name="txt_main_copyright">von Harald Koppay (2011)</string>
+    <string name="txt_main_dialog_title">Willkommen zum Android Demo-App!</string>
+    <string name="txt_main_dialog_title2">Level 2 des Demo-Apps</string>
+    <string name="txt_main_dialog_title3">Level 3 des Demo-Apps</string>
+    <string name="txt_main_dialog_title4">Level 4 des Demo-Apps</string>
+    <string name="txt_main_dialog_title5">Level 5 des Demo-Apps</string>
+    <string name="txt_main_dialog_titleIntents">Implizite Intents</string>
+    <string name="txt_main_dialog_titleServices">Broadcasts &amp; Services</string>
+    <string name="txt_main_dialog_titleContent">Content Provider</string>
+    <string name="txt_extras_dialog_titleGraphics">2-D Grafik und Video</string>
+    <string name="txt_extras_dialog_titleSensors">Sensoren</string>
+    <string name="txt_extras_dialog_titleGps">Lokalisierung</string>
+    <string name="txt_dial_content">In diesem App sollen die Basis-Konzepte der Android-Programmierung vorgestellt werden. Für das Verständnis dieser Konzepte ist die Lektüre der zugehörigen schriftlichen Ausarbeitung essentiell.
+    	\n\nBis hierhin ist schon viel passiert. Neben der kompletten Bereitstellung und Skalierung eines Layouts wurde... 
+    	\n
+    	\n<i>* der Einstiegs-Screen (eine "Activity") aufgerufen (mittels eines "Intents"),
+    	\n* das Menü aufgebaut (über Navigationstaste erreichbar), 
+    	\n* ein onClick-Event ausgewertet (Button "Hallo Android..."),
+    	\n* ein "Alert-Dialog" aufgebaut und angezeigt (dieser hier)</i>
+    	\n
+    	\nAls nächstes soll dem App ein Benutzername mitgeteilt werden. Dies geschieht über die von Android verwalteten "Preferences", die persistent gesichert werden. 
+    	Um auf die Preferences für dieses App zugreifen zu können, schliessen Sie dieses Dialogfenster und drücken dann die Menü-Navigationstaste des Smartphones.  	
+    	Unter dem Menüpunkt "Einstellungen" können Sie Ihren Benutzernamen eingeben...</string>
+    <string name="txt_dial_content2">Jeder Screen entspricht bei Android einer sogenannten <b>"Activity"</b>. Ein Wechsel zwischen verschiedenen Activities muss immer mittels einer Absichtserklärung,
+    	einem sogenannten <b>"Intent"</b>, eingeleitet werden.
+    	\n\nEine erste Activity, die Startseite, und ein ensprechendes Intent zum Aufruf der Startseite haben Sie bereits kennengelernt. Bei diesem Intent handelte es sich
+    	um einen sog. <i>expliziten</i> Intent, da das Ziel (die Startseite), bereits bekannt war. Ein weiterer expliziter Intent soll im Folgenden durch das Drücken des Buttons \"Activities &amp; Intents\"
+    	ausgelöst werden. Hierbei wird eine zweite Activity, also ein zweiter Screen, geöffnet, in welchem die <i>impliziten</i> Intents demonstriert werden.</string>
+    <string name="txt_dial_content3">Nachdem wir die ersten beiden Grundkonzepte des Android-Frameworks "Activities" und "Intents" kennengelernt haben, sollen im nächsten Schritt die Konzepte der <b>"Broadcasts"</b>
+    	und <b>Services</b> vorgestellt werden.
+    	\n\nBroadcasts sind spezielle Intents auf Systemebene, wie z.B.: <i>\"SMS wurde empfangen.\"</i>
+    	\n\nServices realisieren Hintergrundaktivität und können somit unabhängig von ihrer Urspungs-Activity laufen. Ebenso ist es möglich Services von anderen Programmen bzw. Activities aus zu nutzen.
+    	\n\nBetätigen Sie den nächsten Button um die <i>\"Broadcasts &amp; Intents\"</i> Activity zu starten.</string>
+    <string name="txt_dial_content4">Nun soll ein weiteres Basis-Konzept des Android-Frameworks vorgestellt werden:
+		\n\nDie <b>Content Provider</b>
+		\n\nDas <i>\"SandBox\"</i>-Prinzip von Android verbietet den direkten Zugriff von externen Applikationen 
+		auf den geschützten Speicherbereich einer App. ContentProvider stellen eine sichere Möglichkeit dar, definierte Daten, ohne direkten Zugriff, untereinander auszutauschen. 
+		\n\nIn der nächsten Activity \"ContentProvider\" wird ein System-ContentProvider (Medienbibliothek) sowie ein eigens erstellter ContentProvider, für die Benutzer-Datenbank dieser App, genutzt.</string>
+    <string name="txt_dial_content5">Nachdem nun die Basis-Konzepte des Android-Frameworks vorgestellt wurden, sollen im Folgenden einige Extra-Funktionalitäten demonstriert werden.
+    	\n\nIn dem nächsten Abschnitt \"Extras\" werden die Themen <i>2-D Grafik, Animationen, Videowiedergabe, Hardware-Zugriffe (Sensoren)</i> und <i>Lokalisierung (GPS)</i> aufgegriffen.
+    	\n\nViel Spaß beim Ausprobieren!
+    	\n\np.s. Sie können die Demonstration nochmal von vorne beginnen, indem Sie <i>Menü -> Anwendung resetten</i> betätigen. Außerdem kann die Level-Kontrolle über <i>Menü -> Einstellungen</i> ausgeschaltet werden.</string>
+    <string name="txt_dial_contentIntents">Sie haben soeben eine zweite Activity, mittels eines expliziten Intents, der durch den Button-Klick ausgelöst wurde, geöffnet!
+    	\n\nIn dieser Activity sollen einige implizite Intents vorgestellt werden. 
+    	\nEin Intent ist implizit, wenn vorab nicht bekannt ist, welche Activity bzw. welches Programm das Intent verarbeiten soll. 
+    	Programme bzw. Activities, die einen bestimmten impliziten Intent verarbeiten möchten, melden ihr Interesse über einen entsprechenden "Intent-Filter" bei Android an. Sobald das passende Intent verschickt wird, 
+    	öffnet Android die Activity mit dem entsprechenden Intent-Filter.
+    	\n\nNutzen Sie die Eingabemöglichkeiten, um einige implizite Intents per Knopfdruck zu verschicken und beobachten Sie wie Android die passenden Anwendungen zu den Intents heraussucht.
+    	\n\n(Ab sofort wird der Klassen-Name der angezeigten Activity unten links eingeblendet. Sie können diese Anzeige über das Einstellungs-Menü wieder abschalten.)</string>
+    <string name="txt_dial_contentServices">Folgende Konzepte werden hier vorgestellt:
+    	\n\n<i>1. BroadcastReceiver: Aktivieren Sie diesen Receiver um die Systemnachricht <i>\"SMS empfangen\"</i> abfangen zu können.
+    	\n\n2. Service und BroadcastIntent: Ein Hintergrund-Service versendet eigene BroadcastIntents.
+    	\n\n3. Remote Service, Binder und Broadcast: Ein Service wird in einem neuen Prozess gestartet. Der Binder ermöglicht die Interprozess-Kommunikation. Der Service kann mittels Broadcasts gesteuert werden
+    	\n\n4. TCP-Server und Threads: In einem Thread lauscht ein TCP-Server auf eingehende Verbindungen. Clients können Befehle an den gestarteten und gebundenen Remote Service aus 3. schicken.</i>
+    	\n\nHinter den <b>(i)</b>-Zeichen verstecken sich Kontext-Menüs, welche Ihnen weitere Informationen zu den genannten Punkten liefern. Drücken Sie dazu lange genug auf das Symbol.</string>
+    <string name="txt_services_kontext_broadcast">Ein <i>dynamischer BroadcastReceiver</i> wird registriert und wartet fortan auf das System-Ereignis \"<i>SMS empfangen</i>\".</string>
+    <string name="txt_services_kontext_simpleservice">Ein einfacher <i>Local Service</i> wird gestartet, der jede Sekunde einen eigenen BroadcastIntent mit der Nachricht <i>\"Service läuft seit x Sekunden\"</i> verschickt.
+    	\n\nGleichzeitig wird ein BroadcastReceiver registriert, der genau diesen BroadcastIntent abfängt und dessen Nachricht hier in der Activity ausgibt.</string>
+    <string name="txt_services_kontext_complexservice">Ein komplexer <i>Remote Service</i> wird in einem eigenen Prozess gestartet. Er ist fortan unabhängig von dieser Anwendung und kann nur noch mittels Interprozess-Kommunikation angesprochen werden.
+    	\nZu diesem Zweck wurde die <i>Binder</i>-Schnittstelle implementiert.
+    	\n\nGleichzeitig wurde ein SMS-BroadcastReceiver, wie in 1. registriert. SMS mit den Inhalten \"MUSIC PLAY\" und \"MUSIC STOP\" werden als Kommandos erkannt und über die Binder-Schnittstelle an den Remote Service gesendet.
+    	\nDieser spielt eine zufällig ausgewählte Audio-Datei aus der Medienbibliothek ab.</string>
+    <string name="txt_services_kontext_tcpserver">Es wird ein <i>TCP-ServerSocket</i> auf dem Port 30999 geöffnet mit dem sich fortan beliebige Clients verbinden können. Der Remote Music Service lässt sich nun auch von den TCP-Clients steuern.
+    	\n\nDa Socket-Operationen den <i>UI-Thread</i> blockieren würden, werden die Server-Funktionalitäten in einen eigenen Thread ausgelagert.</string>
+    <string name="txt_dial_contentProvider"><i>Content Provider</i> ermöglichen den Zugriff auf anwendungsfremde Daten. Android selbst bietet mehrere Content Provider auf Systemebene an. Darunter auch der Content Provider der Medienbibliothek, der hier genutzt wird.
+    	Wenn Sie einen Eintrag anklicken, wird die entsprechende Audio-Datei vom <i>MediaPlayer</i> abgespielt.
+    	\n\nDes Weiteren wird hier ein eigener Content Provider, welcher den Inhalt der eigens implementierten SQLite-Benutzer-Datenbank bereitstellt, verwendet.
+    	\n\nDie Listenförmige Darstellung der Content Provider Inhalte, wird dank der Klassen <i>ListActivity</i> und <i>CursorAdapter</i> ermöglicht.</string>
+    <string name="txt_dial_contentGraphics">Folgende Konzepte werden hier vorgestellt:
+    	\n\n<i>1. 2-D Grafik mit animierten Balkendiagramm im Canvas eines CustomViews.
+    	\n\n2. 2-D Grafik mit animierten Ringen, die durch Touch-Ereignisse gezeichnet werden
+    	\n\n3. 2-D-Animation auf einem ImageView. Das Animations-Verhalten wurde in einer XML-Datei <i>anim.xml</i> definiert.
+    	\n\n4. Video-Wiedergabe in einem VideoView-Element</i></string>
+    <string name="txt_dial_contentSensors">Im Folgenden sollen einige Hardware-Zugriffe, im speziellen Sensoren-Zugriffe, demonstriert werden. 
+    	\n\nDa nie automatisch davon ausgegangen werden kann, dass ein bestimmtes Android-Gerät, alle unterstützten Hardware-Komponenten auch tatsächlich besitzt, muss vor jedem Erstzugriff eine Abfrage getätigt werden.
+    	\nNicht vorhandene Sensoren werden in diesem Beispiel durch \"n.a.\" in der Daten-Ausgabe gekennzeichnet.
+    	\n\nDer Zugriff auf die Sensoren wird mittels der <i>SensorManager</i>-Klasse realisiert.</string>
+    <string name="txt_dial_contentGPS">Hier werden GPS-Funktionalitäten demonstriert.
+    	\n\nDie Klasse <i>LocationManager</i> ermöglicht den Zugriff auf das GPS-Modul.
+    	\nNeben den GPS-Daten werden außerdem Funkzellen-Informationen für die unterstützende Lokalisierung des Gerätes verwendet.</string>
+    <string name="txt_main_preferences_cat_allgemein">Allgemein</string>
+    <string name="txt_main_preference_name">Benutzername</string>
+    <string name="txt_main_preference_level">Level der Demo-App</string>
+    <string name="txt_gps_altitude">Höhe: [ START drücken um akt. Höhe zu ermitteln ]</string>
+    <string name="txt_gps_longitude">Länge: [ START drücken um akt. Länge zu ermitteln ]</string>
+    <string name="txt_gps_latitude">Breite: [ START drücken um akt. Breite zu ermitteln ]</string>
+    <string name="txt_gps_headline">GPS-Tracking</string>
+    <string name="txt_gps_distance">Zurückgelegte Distanz: </string>
+    <string name="txt_intent_headline">Implizite Intents</string>
+    <string name="txt_intent_target">Begriff verwenden für:</string>
+    <string name="txt_services_bcheader">BroadcastReceiver für SMS</string>
+    <string name="txt_services_header">Broadcasts &amp; Services</string>
+    <string name="txt_services_service1header">Local Service mit BroadcastReceiver &amp; BroadcastIntent</string>
+    <string name="txt_services_service2header">Remote Service mit Binder &amp; BroadcastReceiver für SMS</string>
+    <string name="txt_services_tcpheader">Thread mit TCP-Server</string>
+    <string name="txt_services_service1msg">Service läuft seit %DUR Sekunden</string>
+    <string name="txt_provider_header">Content Provider</string>
+    <string name="txt_music_layout_label_album">Album:</string>
+    <string name="txt_music_layout_label_interpret">Interpret:</string>    
+    <string name="txt_extras_header">Extras</string>    
+    <string name="txt_extras_graphics_header">Grafik &amp; Video</string>
+    <string name="txt_extras_graphics_diagram">2D Grafik: Login-Diagramm</string>
+    <string name="txt_extras_graphics_touch">2D Grafik mit Touch-Input</string>
+    <string name="txt_extras_graphics_anim">2D Grafik-Animation</string>
+    <string name="txt_extras_graphics_video">Videoplayer</string>
+    <string name="txt_main_preferences_cat_levelcontrol">Level-Steuerung</string>
+    <string name="txt_main_preferences_cat_info">Info</string>
+    <string name="txt_main_preference_enablelevelctrl">Die automatische Level-Kontrolle steuert Ihren Fortschritt in dieser Demo-App (Aktivierung empfohlen).</string>
+    <string name="txt_main_preference_pophelp">Die automatischen Hilfs-Popups erklären Ihnen die neuen Funktionen der jeweiligen Activity (Aktivierung empfohlen).</string>
+    <string name="txt_main_preference_info">Dies ist eine PreferenceActivity der Android Beispielanwendung von Harald Koppay, 2011</string>
+    <string name="txt_media_header">Media &amp; Kamera</string>
+    <string name="txt_media_video">Videoplayer</string>
+    <string name="txt_sensor_header">Sensoren</string>
+    <string name="txt_extras_sensor_acceleration">Beschleunigungs-Sensor (m/s)</string>
+    <string name="text_extras_sensor_accelX">X-Achse:</string>
+    <string name="text_extras_sensor_accY">Y-Achse:</string>
+    <string name="text_extras_sensor_accZ">Z-Achse:</string>
+    <string name="txt_extras_sensor_gyro">Gyroskop (rad/s)</string>
+    <string name="txt_extras_sensor_gravity">Schwerkraft (m/s²)</string>
+    <string name="txt_extras_sensor_orientation">Ausrichtung (Grad)</string>
+    <string name="txt_extras_sensor_magnetic">Magnetfeld (uT)</string>
+    <string name="txt_extras_sensor_light">Helligkeit (lux)</string>
+    <string name="txt_extras_sensor_lightvalue">Wert:</string>
+    <string name="txt_extras_sensor_proximity">Näherungs-Sensor (cm)</string>
+    <string name="txt_extras_sensor_thermo">Thermometer (°F)</string>
+    
+    
+    
+    
+    <!-- Buttons -->
+    <string name="btn_main_hello">Hallo Android...</string>
+    <string name="btn_main_intents">Activities &amp; Intents</string>
+    <string name="btn_main_contentprov">ContentProvider</string>
+    <string name="btn_main_extras">Extras</string>
+    <string name="btn_main_services">Broadcasts &amp; Services</string>
+    <string name="btn_gps_start">Tracking starten</string>
+    <string name="btn_gps_stop">Tracking stoppen</string>
+    <string name="btn_intent_submit">Abschicken</string>
+    <string name="btn_services_bcstart">Empfänger aktivieren</string>
+    <string name="btn_services_bcstop">Empfänger deaktivieren</string>
+    <string name="btn_services_service1start">Local Service starten</string>
+    <string name="btn_services_service1stop">Local Service stoppen</string>
+    <string name="btn_services_service2start">Remote Service starten</string>
+    <string name="btn_services_service2stop">Remote Service stoppen</string>
+    <string name="btn_services_service2connect">Service verbinden</string>
+    <string name="btn_services_service2disconnect">Verbindung beenden</string>
+    <string name="btn_services_tcpstart">TCP-Server starten</string>
+    <string name="btn_services_tcpstop">TCP-Server stoppen</string>
+    <string name="btn_extras_graphics">Grafik &amp; Video</string>
+    <string name="btn_extras_media">Media &amp; Kamera</string>
+    <string name="btn_extras_sensor">Sensoren</string>
+    <string name="btn_extras_gps">GPS Modul</string>
+    
+    
+    <!-- Menue -->
+    <string name="men_main_preferences">Einstellungen</string>
+    <string name="men_main_reset">Anwendung resetten</string>
+    <string name="men_main_exit">Beenden</string>
+    
+    
+    <!-- EditViews -->
+    <string name="ed_intent_defaultContent">Methode unten auswählen...</string>
+    <string name="ed_intent_WebChoice">http://</string>
+    <string name="ed_intent_SMSChoice">SMS-Text eingeben...</string>
+    <string name="ed_intent_CallChoice">+49 </string>
+    <string name="ed_intent_GeoChoice">Adresse eingeben... </string>
+
+    
+    <!-- RadioButtons -->
+    <string name="rb_intent_call">einen Anruf</string>
+    <string name="rb_intent_sms">eine SMS</string>
+    <string name="rb_intent_web">eine Internet-Suche</string>
+    <string name="rb_intent_geo">eine Maps-Suche</string>
+    <string name="rb_provider_music">Musik auf der SD-Karte</string>
+    <string name="rb_provider_users">Benutzer des Demo-Apps</string>
+
+    
+    <string name="app_name">Hello Android FHW</string>
+
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:paddingBottom="3dp">
+    <TextView android:paddingTop="2dp" android:layout_height="wrap_content" android:layout_width="match_parent" android:textAppearance="?android:attr/textAppearanceMedium" android:id="@+id/txt_music_layout_title"></TextView>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout1" android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView2" android:text="@string/txt_music_layout_label_album" android:layout_marginRight="2dp"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/txt_music_layout_album"></TextView>
+    </LinearLayout>
+    <LinearLayout android:layout_height="wrap_content" android:id="@+id/linearLayout2" android:layout_width="match_parent">
+        <TextView android:layout_height="wrap_content" android:layout_width="wrap_content" android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/textView4" android:text="@string/txt_music_layout_label_interpret" android:layout_marginRight="2dp"></TextView>
+        <TextView android:layout_height="wrap_content" android:layout_width="match_parent" android:textAppearance="?android:attr/textAppearanceSmall" android:id="@+id/txt_music_layout_interpret"></TextView>
+    </LinearLayout>
+    
+</LinearLayout>
